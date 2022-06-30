@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Redes neuronales</title>
 </head>
 
 <body>
-    <h1>Aquí intentando entrenar estas neuronas jejeje...</h1>
+    <h1>🧠 Entrenamiento de Red Neuronal basada en Tweets 🧠</h1>
     <div id="content">
-        <input id="inputTw" type="text" placeholder="Ingresa el Tweet">
-        <button id="buttonTraining">Comenzar entrenamiento</button>
+        <div class="prediction">
+            <textarea id="inputTw" placeholder="Ingresa el Tweet"></textarea>
+            <button id="buttonTraining">Realizar predicción</button>
+            <p id="textResult"></p>
+            <p id="result"></p>
+            <p id="porcentaje"></p>
+            <img src="" alt="" id="imageResult">
+        </div>
+        <div class="table">
+            <table id="tableTraining">
+                <thead>
+                    <th>Iterations</th>
+                    <th>Training Error</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+            <p id="finishTrainig">...Finished training...</p>
+        </div>
     </div>
 
     <script src="./js/brain.js"></script>
